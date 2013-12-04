@@ -23,6 +23,7 @@ dojo.declare("com.lekkimworld.connections.mb.Widget", null, {
 				var strDate = lconn.core.DateUtil.AtomDateToString(e.published);
 				html += "<br/>";
 				html += "<a href=\"" + e.url + "\">" + strDate + "</a>";
+				html += ", " + e.likes.totalItems + " likes, " + e.replies.totalItems + " replies.";
 				dojo.create("div", {"style": "margin-bottom: 5px; border-bottom: solid black 1px", "innerHTML": html}, elemRoot, "last");
 			});
 		} catch (e) {
